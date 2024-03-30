@@ -89,10 +89,6 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <p>Mashup</p>
             </a>
     </div>
-        <p class="tagline"></p>
-		<br>
-		<div class="copyrighthome">
-		<p>© Bandnet</a></p>
 		</div>
     </div>
 
