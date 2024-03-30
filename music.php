@@ -35,7 +35,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <li><p class="welcomeName">Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></p></li>
         </ul>
     </nav>
-	<div class="containerhome"><br><br><br><br><br>
+	<div class="containerhome"><br><br><br><br><br><br><br><br><br><br>
         <h1 class="website-name">Bandnet</h1>
         <div class="grid">
             <a href="cruelsummer.php" class="grid-item">
