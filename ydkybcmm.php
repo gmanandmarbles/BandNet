@@ -26,7 +26,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     <nav class="nav">
       <i class="uil uil-bars navOpenBtn"></i>
             <div class="logo">
-                <img src="logo.png" alt="Logo">
+            <img src="<?php echo empty($_SESSION["school"]) ? 'logo.png' : htmlspecialchars($_SESSION["school"]) . '.png'; ?>" alt="Logo">
             </div>
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
@@ -40,7 +40,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <h1>You Don't Know You're Beautiful - Call Me Maybe</h1>
 
 <div>
-  <p>Maship</p>
+  <p>Mashup</p>
   <audio controls>
     <source src="Scores/You Don_t Know You_re Beautiful - Call Me Maybe (Mashup)/14989654.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

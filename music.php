@@ -33,6 +33,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <li><a href="index.php">Home</a></li>
         <li><a href="music.php">Music</a></li>
         <li><p class="welcomeName">Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></p></li>
+        <li><a href="logout.php">Logout</a></li>
         </ul>
     </nav>
 	<div class="containerhome"><br><br><br><br><br><br><br><br><br><br>
@@ -87,6 +88,22 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <a href="ydkybcmm.php" class="grid-item">
             <h3>You Don't Know You're Beautiful - Call Me Maybe</h3>
             <p>Mashup</p>
+            </a>
+            <a href="flowers.php" class="grid-item">
+            <h3>Flowers</h3>
+            <p>Miley Cyrus</p>
+            </a>
+            <a href="dancingqueen.php" class="grid-item">
+            <h3>Dancing Queen</h3>
+            <p>Abba</p>
+            </a>
+            <a href="perfect.php" class="grid-item">
+            <h3>Perfect</h3>
+            <p>Ed Sheeran</p>
+            </a>
+            <a href="september.php" class="grid-item">
+            <h3>September</h3>
+            <p>Earth, Wind, and Fire.</p>
             </a>
     </div>
 		</div>
