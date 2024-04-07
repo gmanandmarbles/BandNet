@@ -44,35 +44,20 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <th>Title</th>
                 <th>Artist</th>
             </tr>
-            <tr>
-                <td><a href="Music\cruelsummer.php">Cruel Summer</a></td>
-                <td>Taylor Swift</td>
-            </tr>
-            <tr>
-                <td><a href="Music\fastcar.php">Fast Car</a></td>
-                <td>Luke Combs</td>
-            </tr>
-            <tr>
-                <td><a href="Music\feelinggood.php">Feeling Good</a></td>
-                <td>Michael Buble</td>
-            </tr>
-            <tr>
-                <td><a href="Music\gdfr.php">GDFR</a></td>
-                <td>Flo Rida</td>
-            </tr>
-            <tr>
-                <td><a href="Music\IAINTWORRIED.php">I Ain't Worried</a></td>
-                <td>OneRepublic</td>
-            </tr>
-            <tr>
-                <td><a href="Music\kungfufighting.php">Kung Fu Fighting</a></td>
-                <td></td>
-            </tr>
             
+            <tr>
+                <td><a href="Music\perfect.php">Perfect</a></td>
+                <td>Ed Sheeran</td>
+            </tr>
+            <tr>
+                <td><a href="Music\september.php">September</a></td>
+                <td>Earth, Wind, and Fire</td>
+            </tr>
+            <!-- Add more rows as needed -->
         </table>
         <p class="bottombuttons">
-    	    <a href="music.php">Previous Page&nbsp;&nbsp;|&nbsp;&nbsp;</a>
-    	    <a href="music2.php">Next Page</a>
+    	    <a href="music2.php">Previous Page&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+    	    <a href="music3.php">Next Page</a>
     	</p>
     </div>
 </body>
