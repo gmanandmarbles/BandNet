@@ -505,14 +505,27 @@ body {
 }
 
 .container {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 0 20px;
+    position: relative;
+    top: 175px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+}
+
+.containerhome {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
 }
 
 .list {
     display: flex;
     flex-direction: column;
+    align-items: center; /* Center items horizontally */
 }
 
 .list-item {
@@ -522,6 +535,8 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: box-shadow 0.3s ease;
     margin-bottom: 20px; /* Space between list items */
+    width: 100%; /* Ensure items take full width */
+    max-width: 400px; /* Limit maximum width of items */
 }
 
 .list-item:last-child {
@@ -553,6 +568,7 @@ body {
     .list {
         flex-direction: row;
         flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+        justify-content: center; /* Center items horizontally */
     }
 
     .list-item {
