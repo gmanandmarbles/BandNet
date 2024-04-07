@@ -505,47 +505,62 @@ body {
 }
 
 .container {
-	max-width: 1200px;
-	margin: 20px auto;
-	padding: 0 20px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
 }
 
-.grid {
-	display: grid;
-	grid-gap: 20px;
+.list {
+    display: flex;
+    flex-direction: column;
 }
 
-.grid-item {
-	background-color: #fff;
-	padding: 20px;
-	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: box-shadow 0.3s ease;
+.list-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px; /* Space between list items */
 }
 
-.grid-item:hover {
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.list-item:last-child {
+    margin-bottom: 0; /* Remove extra margin from last item */
 }
 
-.grid-item img {
-	max-width: 100%;
-	height: auto;
+.list-item:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.grid-item h3 {
-	margin-top: 10px;
-	font-size: 18px;
-	color: #333;
+.list-item img {
+    max-width: 100%;
+    height: auto;
 }
 
-.grid-item p {
-	margin-top: 10px;
-	font-size: 14px;
-	color: #666;
+.list-item h3 {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.list-item p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
 }
 
 @media (min-width: 768px) {
-  .grid {
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  }
+    .list {
+        flex-direction: row;
+        flex-wrap: wrap; /* Allow items to wrap into multiple rows */
+    }
+
+    .list-item {
+        flex: 1 0 250px; /* Set initial width to 250px, can adjust as needed */
+        margin-right: 20px; /* Space between list items on larger screens */
+    }
+
+    .list-item:last-child {
+        margin-right: 0; /* Remove extra margin from last item */
+    }
 }
