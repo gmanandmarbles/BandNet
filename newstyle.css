@@ -512,6 +512,7 @@ body {
 
 .grid {
 	display: grid;
+	grid-template-columns: repeat(3, 300px); /* Set grid to 3 columns with fixed width of 300px */
 	grid-gap: 20px;
 }
 
@@ -542,16 +543,4 @@ body {
 	margin-top: 10px;
 	font-size: 14px;
 	color: #666;
-}
-
-@media (min-width: 768px) {
-	.grid {
-	  grid-template-columns: repeat(3, 1fr); /* Set grid to 3 columns */
-	}
-}
-
-@media (max-width: 767px) {
-	.grid {
-	  grid-template-columns: 1fr;
-	}
 }
