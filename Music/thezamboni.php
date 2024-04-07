@@ -41,7 +41,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <h1>The Zamboni</h1>
 
 <div>
-  <p>The Zamboni</p>
+  <p>Nicholas D</p>
+  <p>Second Movement of the "Zamboni Suite"</p>
   <audio controls>
     <source src="Scores/The Zamboni/The_Zamboni.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

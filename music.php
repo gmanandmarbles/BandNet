@@ -66,7 +66,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </tr>
             <tr>
                 <td><a href="Music\kungfufighting.php">Kung Fu Fighting</a></td>
-                <td></td>
+                <td>Carl Douglas</td>
             </tr>
             
         </table>

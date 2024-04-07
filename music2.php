@@ -51,7 +51,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </tr>
             <tr>
                 <td><a href="Music\thezamboni.php">The Zamboni</a></td>
-                <td></td>
+                <td>Nicholas D</td>
             </tr>
             <tr>
                 <td><a href="Music\whistle.php">Whistle</a></td>
