@@ -38,7 +38,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         </ul>
     </nav>
     <div class="containerhome">
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        
         <h1 class="website-name">Bandnet</h1>
         <div class="list">
             <a href="cruelsummer.php" class="list-item">
