@@ -30,8 +30,8 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </div>
       <ul class="nav-links">
         <i class="uil uil-times navCloseBtn"></i>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="music.php">Music</a></li>
+        <li><a href="../index.php">Home</a></li>
+        <li><a href="../music.php">Music</a></li>
         <li><p class="welcomeName">Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></p></li>
         </ul>
     </nav>
