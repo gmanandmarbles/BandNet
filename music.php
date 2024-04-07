@@ -33,6 +33,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <i class="uil uil-times navCloseBtn"></i>
             <li><a href="index.php">Home</a></li>
             <li><a href="music.php">Music</a></li>
+            <li><a href="disclaimer.php">Disclaimer</a></li>
             <li><p class="welcomeName">Welcome, <?php echo htmlspecialchars($_SESSION["username"]); ?></p></li>
             <li><a href="logout.php">Logout</a></li>
         </ul>
