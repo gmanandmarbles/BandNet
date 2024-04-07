@@ -47,7 +47,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             
             <tr>
                 <td><a href="Music\singsingsing.php">Sing Sing Sing!</a></td>
-                <td></td>
+                <td>Benny Goodman</td>
             </tr>
             <tr>
                 <td><a href="Music\thezamboni.php">The Zamboni</a></td>
@@ -59,7 +59,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             </tr>
             <tr>
                 <td><a href="Music\ydkybcmm.php">You Don't Know You're Beautiful - Call Me Maybe</a></td>
-                <td>Mashup</td>
+                <td>Mashup (One Direction, and Carly Rae Jepson)</td>
             </tr>
             <tr>
                 <td><a href="Music\flowers.php">Flowers</a></td>
