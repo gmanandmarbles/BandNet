@@ -505,50 +505,47 @@ body {
 }
 
 .container {
-    position: relative;
-    top: 175px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+	max-width: 1200px;
+	margin: 20px auto;
+	padding: 0 20px;
 }
 
-.containerhome {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh; /* Ensure the container takes at least the full viewport height */
+.grid {
+	display: grid;
+	grid-gap: 20px;
 }
 
-.list {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Create multiple columns with a minimum width of 250px */
-    gap: 20px; /* Space between list items */
-    padding: 20px; /* Add padding around the list */
-    list-style: none; /* Remove default list styling */
+.grid-item {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
 }
 
-.list-item {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: box-shadow 0.3s ease;
+.grid-item:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.list-item:hover {
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+.grid-item img {
+	max-width: 100%;
+	height: auto;
 }
 
-.list-item img {
-    max-width: 100%;
-    height: auto;
+.grid-item h3 {
+	margin-top: 10px;
+	font-size: 18px;
+	color: #333;
 }
 
-.list-item h3 {
-    margin-top: 10px;
-    font-size: 18px;
-    color: #333;
+.grid-item p {
+	margin-top: 10px;
+	font-size: 14px;
+	color: #666;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
 }
