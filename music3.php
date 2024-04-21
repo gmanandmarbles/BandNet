@@ -57,6 +57,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <td>Earth, Wind, and Fire</td>
                 <td>Soprano (Voice), Melody C (Treble, Bass), Clarinet, Alto saxophone, Tenor saxophone, Trombone, Electric guitar, Piano, Acoustic bass, Drumset.</td>
             </tr>
+            <tr>
+                <td><a href="Music\readyforit.php">... Ready For It?</a></td>
+                <td>Taylor Swift</td>
+                <td>Piano</td>
+            </tr>
             <!-- Add more rows as needed -->
         </table>
         <p class="bottombuttons">
