@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>GDFR - Flo Rida</p>
+  <p>Piccolo, Clarinet, Bass clarinet, Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Horn, Trombone, Tuba, Drumset, Stamp.</p>
   <audio controls>
     <source src="Scores/GDFR (Short)/G.D.F.R._For_Pep_Band.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

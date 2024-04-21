@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Fast Car - Luke Combs</p>
+  <p>Flute, Clarinet, Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Mellophone, Trombone, Baritone, Sousaphone, Snare drum, Tenor drum, Bass drum.</p>
   <audio controls>
     <source src="Scores/Fast Car/Fast_Car_-_Luke_Combs.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

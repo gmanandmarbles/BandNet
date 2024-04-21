@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Flowers - Miley Cyrus</p>
+  <p>Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Electric bass, Drumset</p>
   <audio controls>
     <source src="Scores\Flowers\Flowers.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

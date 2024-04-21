@@ -40,8 +40,10 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
         <h1 class="website-name">BandNet</h1>
         <h1>Cruel Summer - Taylor Swift</h1>
 
+
 <div>
   <p>Cruel Summer - Taylor Swift</p>
+  <p>Flute, Clarinet, Bass clarinet, Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Mellophone, Trombone, Bariton, Sousaphone, Snare drum, Tenor drums, Bass drums.</p>
   <audio controls>
     <source src="Scores/Cruel Summer/Cruel_summer__Taylor_Swift_Cruel_Summer_-_Taylor_Swift.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

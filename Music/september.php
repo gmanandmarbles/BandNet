@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Earth, Wind, and Fire.</p>
+  <p>Soprano (Voice), Melody C (Treble, Bass), Clarinet, Alto saxophone, Tenor saxophone, Trombone, Electric guitar, Piano, Acoustic bass, Drumset.</p>
   <audio controls>
     <source src="Scores\September\September__Earth_Wind__Fire.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

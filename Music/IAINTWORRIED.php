@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>I Ain't Worried - OneRepublic</p>
+  <p>Piccolo, Flute, Clarinet, Bass clarinet, Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Mellophone, Horn in F, Trombone, Baritone, Tuba, Sousaphone, Glockenspiel, Xylophone.</p>
   <audio controls>
     <source src="Scores/I Ain_t Worried/I Ain_t Worried.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

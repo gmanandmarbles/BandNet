@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Mashup</p>
+  <p>Drumset, C Instrument (Treble and Bass), B-Flat instrument (Treble and Bass), E-Flat instrument (Treble).</p>
   <audio controls>
     <source src="Scores/You Don_t Know You_re Beautiful - Call Me Maybe (Mashup)/14989654.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

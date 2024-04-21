@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Nicholas D</p>
+  <p>Flute, Oboe, Clarinet, Alto saxophone, Tenor saxophone, Baritone saxophone, Horn, Piano, trumpet, Trombone, Tuba, Timpani, Bass drum</p>
   <p>Second Movement of the "Zamboni Suite"</p>
   <audio controls>
     <source src="Scores/The Zamboni/The_Zamboni.mp3" type="audio/mpeg">

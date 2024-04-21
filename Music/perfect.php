@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Perfect - Ed Sheeran</p>
+  <p>Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Piano, Bass guitar, Drumset.</p>
   <audio controls>
     <source src="Scores\Perfect\Perfect_for_Small_Jazz_Band.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

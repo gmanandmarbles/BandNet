@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Sing Sing Sing</p>
+  <p>Clarinet, Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Acoustic guitar, Piano, Contrabass, Drumset.</p>
   <audio controls>
     <source src="Scores/Sing Sing Sing/Sing_Sing_Sing_-_Benny_Goodman_1938_w_added_solos.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

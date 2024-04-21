@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Whistle</p>
+  <p>Flutes, Clarinet, Alto saxophone, Tenor saxophone, Trumpet, Mellophone, Trombone, Tuba, Piano.</p>
   <audio controls>
     <source src="Scores/Whistle/Whistle.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

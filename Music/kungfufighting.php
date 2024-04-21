@@ -44,6 +44,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
   <p>Kung Fu Fighting - Carl Douglas</p>
   <p> Arranged by Nicholas D</p>
   <p>Played by the CFIS Senior Stage Band</p>
+  <p>Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Bass trombone, Drumset, Piano, Bass guitar. </p>
   <audio controls>
     <source src="Scores/Kung Fu Fighting/Kung_Fu_fighting.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

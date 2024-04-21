@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Dancing Queen - Abba</p>
+  <p>Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Electric guitar, Piano</p>
   <audio controls>
     <source src="Scores\Dancing Queen\DancingQueen.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

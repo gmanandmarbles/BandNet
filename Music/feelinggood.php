@@ -42,6 +42,7 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
 
 <div>
   <p>Feeling Good - Michael Buble</p>
+  <p>Trumpet, Alto saxophone, Tenor saxophone, Baritone saxophone, Trombone, Bass trombone, Electric guitar, Piano, Contrabass.</p>
   <audio controls>
     <source src="Scores/Feeling Good/Feeling_Good.mp3" type="audio/mpeg">
     Your browser does not support the audio element.

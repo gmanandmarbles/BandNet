@@ -44,31 +44,38 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <tr>
                 <th>Title</th>
                 <th>Artist</th>
+                <th>Instruments</th>
             </tr>
             
             <tr>
                 <td><a href="Music\singsingsing.php">Sing Sing Sing!</a></td>
                 <td>Benny Goodman</td>
+                <td>Clarinet, Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Acoustic guitar, Piano, Contrabass, Drumset.</td>
             </tr>
             <tr>
                 <td><a href="Music\thezamboni.php">The Zamboni</a></td>
                 <td>Nicholas D</td>
+                <td>Flute, Oboe, Clarinet, Alto saxophone, Tenor saxophone, Baritone saxophone, Horn, Piano, trumpet, Trombone, Tuba, Timpani, Bass drum.</td>
             </tr>
             <tr>
                 <td><a href="Music\whistle.php">Whistle</a></td>
                 <td>Flo Rida</td>
+                <td>Flutes, Clarinet, Alto saxophone, Tenor saxophone, Trumpet, Mellophone, Trombone, Tuba, Piano.</td>
             </tr>
             <tr>
                 <td><a href="Music\ydkybcmm.php">You Don't Know You're Beautiful - Call Me Maybe</a></td>
                 <td>Mashup (One Direction, and Carly Rae Jepson)</td>
+                <td> Drumset, C Instrument (Treble and Bass), B-Flat instrument (Treble and Bass), E-Flat instrument (Treble).</td>
             </tr>
             <tr>
                 <td><a href="Music\flowers.php">Flowers</a></td>
                 <td>Miley Cyrus</td>
+                <td>Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Electric bass, Drumset</td>
             </tr>
             <tr>
                 <td><a href="Music\dancingqueen.php">Dancing Queen</a></td>
                 <td>Abba</td>
+                <td>Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Electric guitar, Piano</td>
             </tr>
             
             <!-- Add more rows as needed -->

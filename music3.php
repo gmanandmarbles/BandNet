@@ -44,15 +44,18 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
             <tr>
                 <th>Title</th>
                 <th>Artist</th>
+                <th>Instruments</th>
             </tr>
             
             <tr>
                 <td><a href="Music\perfect.php">Perfect</a></td>
                 <td>Ed Sheeran</td>
+                <td>Alto saxophone, Tenor saxophone, Baritone saxophone, Trumpet, Trombone, Piano, Bass guitar, Drumset.</td>
             </tr>
             <tr>
                 <td><a href="Music\september.php">September</a></td>
                 <td>Earth, Wind, and Fire</td>
+                <td>Soprano (Voice), Melody C (Treble, Bass), Clarinet, Alto saxophone, Tenor saxophone, Trombone, Electric guitar, Piano, Acoustic bass, Drumset.</td>
             </tr>
             <!-- Add more rows as needed -->
         </table>
