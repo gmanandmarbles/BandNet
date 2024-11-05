@@ -20,6 +20,69 @@
         "instruments": ["Piano"],
         "audio_url": "Scores/Fast_Car/Fast_Car.mp3",
         "file_url": "Scores/Fast_Car/FastCar.zip"
+      },
+      {
+        "title": "Cruel Summer",
+        "composer": "Taylor Swift",
+        "instruments": ["Flute", "Clarinet", "Bass clarinet", "Alto saxophone", "Tenor saxophone", "Baritone saxophone", "Trumpet", "Mellophone", "Trombone", "Baritone", "Sousaphone", "Snare drum", "Tenor drums", "Bass drums"],
+        "audio_url": "Scores/Cruel_Summer/Cruel_Summer.mp3",
+        "file_url": "Scores/Cruel_Summer/Scores.zip"
+      },
+      {
+        "title": "Fast Car",
+        "composer": "Luke Combs",
+        "instruments": ["Flute", "Clarinet", "Alto saxophone", "Tenor saxophone", "Baritone saxophone", "Trumpet", "Mellophone", "Trombone", "Baritone", "Sousaphone", "Snare drum", "Tenor drum", "Bass drum"],
+        "audio_url": "Scores/Fast_Car/Fast_Car.mp3",
+        "file_url": "Scores/Fast_Car/FastCar.zip"
+      },
+      {
+        "title": "Test",
+        "composer": "Luke Combs",
+        "instruments": ["Piano"],
+        "audio_url": "Scores/Fast_Car/Fast_Car.mp3",
+        "file_url": "Scores/Fast_Car/FastCar.zip"
+      },
+      {
+        "title": "Cruel Summer",
+        "composer": "Taylor Swift",
+        "instruments": ["Flute", "Clarinet", "Bass clarinet", "Alto saxophone", "Tenor saxophone", "Baritone saxophone", "Trumpet", "Mellophone", "Trombone", "Baritone", "Sousaphone", "Snare drum", "Tenor drums", "Bass drums"],
+        "audio_url": "Scores/Cruel_Summer/Cruel_Summer.mp3",
+        "file_url": "Scores/Cruel_Summer/Scores.zip"
+      },
+      {
+        "title": "Fast Car",
+        "composer": "Luke Combs",
+        "instruments": ["Flute", "Clarinet", "Alto saxophone", "Tenor saxophone", "Baritone saxophone", "Trumpet", "Mellophone", "Trombone", "Baritone", "Sousaphone", "Snare drum", "Tenor drum", "Bass drum"],
+        "audio_url": "Scores/Fast_Car/Fast_Car.mp3",
+        "file_url": "Scores/Fast_Car/FastCar.zip"
+      },
+      {
+        "title": "Test",
+        "composer": "Luke Combs",
+        "instruments": ["Piano"],
+        "audio_url": "Scores/Fast_Car/Fast_Car.mp3",
+        "file_url": "Scores/Fast_Car/FastCar.zip"
+      },
+      {
+        "title": "Cruel Summer",
+        "composer": "Taylor Swift",
+        "instruments": ["Flute", "Clarinet", "Bass clarinet", "Alto saxophone", "Tenor saxophone", "Baritone saxophone", "Trumpet", "Mellophone", "Trombone", "Baritone", "Sousaphone", "Snare drum", "Tenor drums", "Bass drums"],
+        "audio_url": "Scores/Cruel_Summer/Cruel_Summer.mp3",
+        "file_url": "Scores/Cruel_Summer/Scores.zip"
+      },
+      {
+        "title": "Fast Car",
+        "composer": "Luke Combs",
+        "instruments": ["Flute", "Clarinet", "Alto saxophone", "Tenor saxophone", "Baritone saxophone", "Trumpet", "Mellophone", "Trombone", "Baritone", "Sousaphone", "Snare drum", "Tenor drum", "Bass drum"],
+        "audio_url": "Scores/Fast_Car/Fast_Car.mp3",
+        "file_url": "Scores/Fast_Car/FastCar.zip"
+      },
+      {
+        "title": "Test",
+        "composer": "Luke Combs",
+        "instruments": ["Piano"],
+        "audio_url": "Scores/Fast_Car/Fast_Car.mp3",
+        "file_url": "Scores/Fast_Car/FastCar.zip"
       }
     ]
   }
