@@ -51,11 +51,11 @@ if (empty($selected_instruments) && empty($title_search) && empty($composer_sear
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Music - BandNet</title>
-    <link rel="stylesheet" href="newstyle.css">
+    
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="script.js" defer=""></script>
     <style>
-        /* Ensure the table is scrollable */
+        /* Ensure the table is scrollable   <link rel="stylesheet" href="newstyle.css">  */
         .song-table-container {
             max-height: 600px;  /* Adjust as needed */
             overflow-y: auto;  /* Enables vertical scrolling */
