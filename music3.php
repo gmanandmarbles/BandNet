@@ -62,6 +62,11 @@ if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
                 <td>Taylor Swift</td>
                 <td>Piano</td>
             </tr>
+            <tr>
+                <td><a href="Music\allofme.php">All Of Me</a></td>
+                <td>John Legend</td>
+                <td>Piano, Clarinet (b-flat)</td>
+            </tr>
             <!-- Add more rows as needed -->
         </table>
         <p class="bottombuttons">
