@@ -54,6 +54,51 @@ if (empty($selected_instruments) && empty($title_search) && empty($composer_sear
     <link rel="stylesheet" href="newstyle.css">
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <script src="script.js" defer=""></script>
+    <style>
+        /* Ensure the table is scrollable */
+        .song-table-container {
+            max-height: 600px;  /* Adjust as needed */
+            overflow-y: auto;  /* Enables vertical scrolling */
+            margin-bottom: 20px;
+        }
+
+        table.song-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table.song-table th, table.song-table td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        table.song-table th {
+            background-color: #f4f4f4;
+        }
+
+        /* Add basic styling for form and button */
+        form {
+            margin-bottom: 20px;
+        }
+
+        select, input[type="text"], button {
+            margin: 5px;
+            padding: 8px;
+            font-size: 14px;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
     <nav class="nav">
@@ -74,7 +119,7 @@ if (empty($selected_instruments) && empty($title_search) && empty($composer_sear
         <h1 class="website-name">Bandnet</h1>
 
         <!-- Filter Form -->
-        <form method="GET" action="musictest.php">
+        <form method="GET" action="music.php">
             <label for="instruments">Filter by Instruments:</label>
             <select name="instruments[]" id="instruments" multiple>
                 <?php
@@ -103,25 +148,22 @@ if (empty($selected_instruments) && empty($title_search) && empty($composer_sear
         </form>
 
         <!-- Display filtered sheet music -->
-        <table class="song-table">
-            <tr>
-                <th>Title</th>
-                <th>Composer</th>
-                <th>Instruments</th>
-            </tr>
-            <?php foreach ($filtered_scores as $score): ?>
-            <tr>
-                <td><a href="music/<?= urlencode($score['title']) ?>.php"><?= htmlspecialchars($score['title']) ?></a></td>
-                <td><?= htmlspecialchars($score['composer']) ?></td>
-                <td><?= htmlspecialchars(implode(', ', $score['instruments'])) ?></td>
-            </tr>
-            <?php endforeach; ?>
-        </table>
-
-        <p class="bottombuttons">
-            <a href="music.php">Previous Page&nbsp;&nbsp;|&nbsp;&nbsp;</a>
-            <a href="music2.php">Next Page</a>
-        </p>
+        <div class="song-table-container">
+            <table class="song-table">
+                <tr>
+                    <th>Title</th>
+                    <th>Composer</th>
+                    <th>Instruments</th>
+                </tr>
+                <?php foreach ($filtered_scores as $score): ?>
+                <tr>
+                    <td><a href="music/<?= urlencode($score['title']) ?>.php"><?= htmlspecialchars($score['title']) ?></a></td>
+                    <td><?= htmlspecialchars($score['composer']) ?></td>
+                    <td><?= htmlspecialchars(implode(', ', $score['instruments'])) ?></td>
+                </tr>
+                <?php endforeach; ?>
+            </table>
+        </div>
     </div>
 </body>
 </html>
