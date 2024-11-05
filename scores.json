@@ -13,7 +13,7 @@
         "instruments": ["Flute", "Clarinet", "Alto saxophone", "Tenor saxophone", "Baritone saxophone", "Trumpet", "Mellophone", "Trombone", "Baritone", "Sousaphone", "Snare drum", "Tenor drum", "Bass drum"],
         "audio_url": "Scores/Fast_Car/Fast_Car.mp3",
         "file_url": "Scores/Fast_Car/FastCar.zip"
-      }
+      },
       {
         "title": "Test",
         "composer": "Luke Combs",
