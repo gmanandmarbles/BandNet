@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandnet - Score Details</title>
+    <link rel="stylesheet" href="webstyles.css">
+</head>
+<body>
+    <header>
+        <h1>Score Details</h1>
+    </header>
+
+    <main>
+        <div id="scoreDetails">
+            <!-- Score details will be populated here -->
+        </div>
+        <div class="cta">
+            <a href="#" id="downloadZipLink" download>Download Score ZIP</a>
+        </div>
+        <audio id="audioPlayer" controls>
+            <source id="audioSource" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+    </main>
+
+    <footer>
+        <p>© 2024 Bandnet - All rights reserved.</p>
+    </footer>
+
+    <script>
+        // Function to fetch the scores data from the JSON file
+        async function loadScores() {
+            try {
+                const response = await fetch('scores.json');
+                const data = await response.json();
+
+                // Get the scoreID from the URL query parameters
+                const urlParams = new URLSearchParams(window.location.search);
+                const scoreID = parseInt(urlParams.get('scoreID'));
+
+                // Find the score based on the scoreID
+                const score = data.sheet_music.find(s => s.id === scoreID);
+
+                if (score) {
+                    // Populate the score details on the page
+                    const scoreDetails = document.getElementById("scoreDetails");
+                    scoreDetails.innerHTML = `
+                        <h2>${score.title}</h2>
+                        <p><strong>Composer:</strong> ${score.composer}</p>
+                        <p><strong>Instruments:</strong> ${score.instruments.join(", ")}</p>
+                    `;
+
+                    // Set up the audio player
+                    const audioSource = document.getElementById("audioSource");
+                    audioSource.src = score.audioURL;
+                    document.getElementById("audioPlayer").load();
+
+                    // Set up the download link
+                    const downloadLink = document.getElementById("downloadZipLink");
+                    downloadLink.href = score.zipURL;
+                } else {
+                    // If no score is found, show an error message
+                    document.getElementById("scoreDetails").innerHTML = "<p>Score not found.</p>";
+                }
+            } catch (error) {
+                console.error('Error loading scores:', error);
+                document.getElementById("scoreDetails").innerHTML = "<p>There was an error loading the score details. Please try again later.</p>";
+            }
+        }
+
+        // Call the function to load the scores when the page loads
+        loadScores();
+    </script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandnet - Music Scores</title>
+    <link rel="stylesheet" href="webstyles.css">
+    <style>
+        /* Your CSS styles here */
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bandnet - Music Scores</h1>
+        <p>Explore and filter music scores by title, composer, and instruments</p>
+    </header>
+
+    <main>
+        <div class="filter-container">
+            <h2>Filter Scores</h2>
+            <label for="titleFilter">Search by Title:</label>
+            <input type="text" id="titleFilter" oninput="filterScores()" placeholder="Enter title">
+
+            <label for="composerFilter">Search by Composer:</label>
+            <input type="text" id="composerFilter" oninput="filterScores()" placeholder="Enter composer">
+
+            <fieldset>
+                <legend>Filter by Instruments:</legend>
+                <div id="instrumentsFilter">
+                    <!-- Dynamic instrument filters will be inserted here -->
+                </div>
+            </fieldset>
+        </div>
+
+        <!-- Table to display scores -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Composer</th>
+                    <th>Instruments</th>
+                </tr>
+            </thead>
+            <tbody id="scoresTableBody">
+                <!-- Scores will be rendered here -->
+            </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>© 2024 Bandnet - All rights reserved. | <a href="#">Privacy Policy</a></p>
+    </footer>
+
+    <script>
+        // Global variable to store the scores data
+        let scores_data = { sheet_music: [] };
+
+        // Function to fetch the scores data from the JSON file
+        async function loadScores() {
+            try {
+                const response = await fetch('scores.json');
+                scores_data = await response.json();
+
+                // Initialize filters and render scores after data is loaded
+                initializeFilters();
+                renderScores(scores_data.sheet_music);
+            } catch (error) {
+                console.error('Error loading scores:', error);
+                document.getElementById("scoresTableBody").innerHTML = "<tr><td colspan='3'>There was an error loading the scores. Please try again later.</td></tr>";
+            }
+        }
+
+        // Function to render the scores table
+        function renderScores(scores) {
+            const tableBody = document.getElementById("scoresTableBody");
+            tableBody.innerHTML = ""; // Clear existing rows
+
+            scores.forEach(score => {
+                const row = document.createElement("tr");
+                const titleCell = document.createElement("td");
+                const composerCell = document.createElement("td");
+                const instrumentsCell = document.createElement("td");
+
+                // Create a clickable link for the score title
+                const titleLink = document.createElement("a");
+                titleLink.href = `score.html?scoreID=${score.id}`;
+                titleLink.textContent = score.title;
+                titleCell.appendChild(titleLink);
+
+                composerCell.textContent = score.composer;
+                instrumentsCell.textContent = score.instruments.join(", ");
+
+                row.appendChild(titleCell);
+                row.appendChild(composerCell);
+                row.appendChild(instrumentsCell);
+                tableBody.appendChild(row);
+            });
+        }
+
+        // Function to initialize filters (instruments, etc.)
+        function initializeFilters() {
+            let instrumentsSet = new Set();
+            scores_data.sheet_music.forEach(score => {
+                score.instruments.forEach(instrument => {
+                    instrumentsSet.add(instrument);
+                });
+            });
+
+            const instrumentsFilterContainer = document.getElementById("instrumentsFilter");
+            instrumentsSet.forEach(instrument => {
+                const checkbox = document.createElement("label");
+                checkbox.innerHTML = `<input type="checkbox" name="instruments" value="${instrument}" onclick="filterScores()"> ${instrument}`;
+                instrumentsFilterContainer.appendChild(checkbox);
+                instrumentsFilterContainer.appendChild(document.createElement("br"));
+            });
+        }
+
+        // Filter function to display scores based on input
+        function filterScores() {
+            const titleFilter = document.getElementById("titleFilter").value.toLowerCase();
+            const composerFilter = document.getElementById("composerFilter").value.toLowerCase();
+            const instrumentFilter = Array.from(document.querySelectorAll("input[name='instruments']:checked")).map(input => input.value);
+
+            const filteredScores = scores_data.sheet_music.filter(score => {
+                const matchesTitle = score.title.toLowerCase().includes(titleFilter);
+                const matchesComposer = score.composer.toLowerCase().includes(composerFilter);
+                const matchesInstruments = instrumentFilter.every(inst => score.instruments.includes(inst));
+                return matchesTitle && matchesComposer && (instrumentFilter.length === 0 || matchesInstruments);
+            });
+
+            renderScores(filteredScores);
+        }
+
+        // On page load, fetch the data and initialize the page
+        window.onload = loadScores;
+    </script>
+</body>
+</html>
