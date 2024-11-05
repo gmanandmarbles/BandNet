@@ -74,7 +74,7 @@ if (empty($selected_instruments) && empty($title_search) && empty($composer_sear
         <h1 class="website-name">Bandnet</h1>
 
         <!-- Filter Form -->
-        <form method="GET" action="music.php">
+        <form method="GET" action="musictest.php">
             <label for="instruments">Filter by Instruments:</label>
             <select name="instruments[]" id="instruments" multiple>
                 <?php
