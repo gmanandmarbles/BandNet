@@ -183,6 +183,30 @@
             "instruments": ["Piano","Clarinet","Drumset"],
             "audioURL": "Music/Scores/TheScientist/The Scientist.mp3",
             "zipURL": "Music/Scores/TheScientist/The Scientist.zip"
+        },
+        {
+            "id": 24,
+            "title": "Glad You Came",
+            "composer": "The Wanted",
+            "instruments": ["Piano","Clarinet","Trumpet"],
+            "audioURL": "Music/Scores/Glad You Came/11007268.mp3",
+            "zipURL": "Music/Scores/Glad You Came/GladYouCame.zip"
+        },
+        {
+            "id": 25,
+            "title": "Too Sweet",
+            "composer": "Hozier",
+            "instruments": ["Flute","Clarinet","Alto Saxophone","Tenor Saxophone","Baritone Saxophone","Trumpet","Tuba","Glockenspiel","Drumset"],
+            "audioURL": "Music/Scores/Too Sweet/TooSweet.mp3",
+            "zipURL": "Music/Scores/Too Sweet/TooSweet.zip"
+        },
+        {
+            "id": 26,
+            "title": "Way Less Sad",
+            "composer": "AJR",
+            "instruments": ["Drumset","Clarinet","Piano","Trumpet"],
+            "audioURL": "Music/Scores/Way Less Sad/19968262.mp3",
+            "zipURL": "Music/Scores/Way Less Sad/WayLessSad.zip"
         }
 
     ]
