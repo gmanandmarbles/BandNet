@@ -207,6 +207,14 @@
             "instruments": ["Drumset","Clarinet","Piano","Trumpet"],
             "audioURL": "Music/Scores/Way Less Sad/19968262.mp3",
             "zipURL": "Music/Scores/Way Less Sad/WayLessSad.zip"
+        },
+        {
+            "id": 27,
+            "title": "Baba Yetu",
+            "composer": "Christopher Tin",
+            "instruments": ["Vocals","Piccolo","Flute","Clarinet","Oboe","English Horn","Bassoon","Contrabassoon","Soprano Saxophone","Alto Saxophone","Tenor Saxophone","Baritone Saxophone","Horn","Trumpet","Trombone","Euphonium","Bass Trombone","Tuba","Harp","Violin","Viola","Violoncello","Double Bass","Piano","Marimba","Tubular Bells","Xylophone","Vibraphone","Timpani","Bongos","Congas","Djembe","Finger Cymbal","Shaker","Suspended Symbal","Low Tom","Bass Drum"],
+            "audioURL": "Music/Scores/Baba Yetu/Audio Recordings/Baba Yetu V1 - Master.mp3",
+            "zipURL": "Music/Scores/Baba Yetu/Baba Yetu.zip"
         }
 
     ]
